@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Шапка (header) */
+header {
+    width: 100%;
+    color: white;
+    background:#007bff;
+    padding: 20px;
+    text-align: center;
+    font-size:20 px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер с контентом */
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+}
+
+/* Стили для раскрывающихся секций */
+.section {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.section-title {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.section[open] .section-title {
+    background: #0056b3;
+}
+
+.section-content {
+    padding: 10px;
+    font-size: 16px;
+    background: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
